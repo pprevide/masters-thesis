@@ -1,0 +1,37 @@
+% thesis.tex
+% This is the main file, which calls up preamble.tex, frontmatter.tex, and thesis.bib as needed.
+
+% Frontmatter shortcuts; note the extra space at the end, which is unfortunately necessary:
+
+\newcommand\myname{Paul Previde }
+\newcommand\mytitle{APPLICATIONS OF DATA MINING TO STUDENT PERFORMANCE PREDICTION AND CURRICULUM DESIGN } % The graduate division requires this to be in caps.
+\newcommand\mydegree{Master of Science } % change to  Master of Science if applicable
+\newcommand\myfield{Computer Science } % e.g., Mathematics
+\newcommand\thismonth{May } % graduation month: May / August / December
+\newcommand\thisyear{2019 } % e.g., 2014
+
+% Shortcuts (add your own...):
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+
+
+% One of the following two has to be commented out:
+%\include{draftpreamble}  % eco-friendly draft version
+\include{preamble}   % final version, formatted according to the Graduate Division's guidelines
+
+% Main body of work:
+\doublespacing
+\include{main}
+
+% Bibliography (calls up the entries in thesis.bib if you run bibTeX):
+\bibliographystyle{amsplain}
+\addcontentsline{toc}{chapter}{Bibliography}
+\singlespacing
+\bibliography{thesis}
+
+\end{document}
+
+
