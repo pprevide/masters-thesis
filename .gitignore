@@ -1,2 +1,6 @@
 # Files to ignore
 intrograph.pdf
+
+# Directories to ignore
+/figures/*
+/tables/*
